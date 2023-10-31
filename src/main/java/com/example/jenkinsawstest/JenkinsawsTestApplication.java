@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class JenkinsawsTestApplication {
 
     public static void main(String[] args) {
-        System.out.println("Application running!!!!******************");
+        System.out.println("Application running!!!!*******************");
         SpringApplication.run(JenkinsawsTestApplication.class, args);
     }
 
