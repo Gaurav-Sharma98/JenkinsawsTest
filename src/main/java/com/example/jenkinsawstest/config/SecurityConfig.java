@@ -23,12 +23,12 @@ public class SecurityConfig {
     SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         return http
                 .csrf(AbstractHttpConfigurer::disable) // disable CSRF protection
-//                .authorizeHttpRequests(authorize ->
-//                        authorize
-//                                .requestMatchers("/test/**").permitAll()
-//                             .requestMatchers("/compounder/**").hasRole("ADMIN")
-//                ).formLogin(Customizer.withDefaults()
-//        )
+                .authorizeHttpRequests(authorize ->
+                        authorize
+                                .requestMatchers("/test/**").permitAll()
+                             .requestMatchers("/compounder/**").hasRole("ADMIN")
+                ).formLogin(Customizer.withDefaults()
+        )
 
                 .build();
     }
